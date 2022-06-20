@@ -1,0 +1,202 @@
+@import "../../utilities/variables";
+@import "../../utilities/mixin";
+
+.home-containerNav {
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(15px);
+    z-index: 999;
+    /* margin: 20px 15px 0px 15px; */
+    /* box-shadow: 2px 7px 14px -1px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 2px 7px 14px -1px rgba(0,0,0,0.4); */
+}
+
+// opacity si riferisce all'elem. padre quindi body ha bg-color=black
+.home-opacity {
+    opacity: 0.2;
+    transition: all .2s ease-in-out;
+}
+
+.home {
+    min-height: 100vh;  
+    background: $color_main;
+    background-color: indianred;
+    transition: all .4s ease-in-out;
+    overflow: hidden;
+    /* background-color: $color_main; */
+    /* background-image: $backgr_img; */
+    
+    
+
+    .home-containerHero {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 90vh;
+        padding: 10vh 20px 0 20px;
+        border-radius: 0 0 35px 35px;
+        background: $color_secondary;
+        background-color: ghostwhite;
+        box-shadow: 2px 6px 15px -1px rgba(0,0,0,0.20);
+        -webkit-box-shadow: 2px 6px 15px -1px rgba(0,0,0,0.20);
+
+
+        .heroImg-container {
+            margin-top: 14vh;
+            align-self: center;
+
+            .heroImg {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+                border-radius: 25px;
+            }
+        }
+
+        .hero-containerText {
+            margin-top: 2vh;
+            padding: 20px 0;
+
+            .bounce-in-right {
+                -webkit-animation: bounce-in-right 1.4s both;
+                        animation: bounce-in-right 1.4s both;
+            }
+            
+            @-webkit-keyframes bounce-in-right {
+                0% {
+                  -webkit-transform: translateX(600px);
+                          transform: translateX(600px);
+                  -webkit-animation-timing-function: ease-in;
+                          animation-timing-function: ease-in;
+                  opacity: 0;
+                }
+                38% {
+                  -webkit-transform: translateX(0);
+                          transform: translateX(0);
+                  -webkit-animation-timing-function: ease-out;
+                          animation-timing-function: ease-out;
+                  opacity: 1;
+                }
+                55% {
+                  -webkit-transform: translateX(68px);
+                          transform: translateX(68px);
+                  -webkit-animation-timing-function: ease-in;
+                          animation-timing-function: ease-in;
+                }
+                72% {
+                  -webkit-transform: translateX(0);
+                          transform: translateX(0);
+                  -webkit-animation-timing-function: ease-out;
+                          animation-timing-function: ease-out;
+                }
+                81% {
+                  -webkit-transform: translateX(32px);
+                          transform: translateX(32px);
+                  -webkit-animation-timing-function: ease-in;
+                          animation-timing-function: ease-in;
+                }
+                90% {
+                  -webkit-transform: translateX(0);
+                          transform: translateX(0);
+                  -webkit-animation-timing-function: ease-out;
+                          animation-timing-function: ease-out;
+                }
+                95% {
+                  -webkit-transform: translateX(8px);
+                          transform: translateX(8px);
+                  -webkit-animation-timing-function: ease-in;
+                          animation-timing-function: ease-in;
+                }
+                100% {
+                  -webkit-transform: translateX(0);
+                          transform: translateX(0);
+                  -webkit-animation-timing-function: ease-out;
+                          animation-timing-function: ease-out;
+                }
+              }
+              @keyframes bounce-in-right {
+                0% {
+                  -webkit-transform: translateX(600px);
+                          transform: translateX(600px);
+                  -webkit-animation-timing-function: ease-in;
+                          animation-timing-function: ease-in;
+                  opacity: 0;
+                }
+                38% {
+                  -webkit-transform: translateX(0);
+                          transform: translateX(0);
+                  -webkit-animation-timing-function: ease-out;
+                          animation-timing-function: ease-out;
+                  opacity: 1;
+                }
+                55% {
+                  -webkit-transform: translateX(68px);
+                          transform: translateX(68px);
+                  -webkit-animation-timing-function: ease-in;
+                          animation-timing-function: ease-in;
+                }
+                72% {
+                  -webkit-transform: translateX(0);
+                          transform: translateX(0);
+                  -webkit-animation-timing-function: ease-out;
+                          animation-timing-function: ease-out;
+                }
+                81% {
+                  -webkit-transform: translateX(32px);
+                          transform: translateX(32px);
+                  -webkit-animation-timing-function: ease-in;
+                          animation-timing-function: ease-in;
+                }
+                90% {
+                  -webkit-transform: translateX(0);
+                          transform: translateX(0);
+                  -webkit-animation-timing-function: ease-out;
+                          animation-timing-function: ease-out;
+                }
+                95% {
+                  -webkit-transform: translateX(8px);
+                          transform: translateX(8px);
+                  -webkit-animation-timing-function: ease-in;
+                          animation-timing-function: ease-in;
+                }
+                100% {
+                  -webkit-transform: translateX(0);
+                          transform: translateX(0);
+                  -webkit-animation-timing-function: ease-out;
+                          animation-timing-function: ease-out;
+                }
+            }
+              
+              
+
+            .hero-welcomeText {
+                font-size: 2rem;
+            }
+
+            .hero-restName {
+                margin-bottom: 20px;
+                font-size: 2.2rem;
+                line-height: 30px;
+            }
+
+            .hero-para {
+                line-height: 3vh;
+            }
+        }
+        
+    }
+
+    .home-containerCat {
+        min-height: 90vh;
+        padding: 10vh $padding-HomeContCat;
+        scroll-margin-top: 10vh;
+        margin-top: 15vh;
+        border-radius: 35px;
+        background: $color_secondary;
+        box-shadow: 2px 6px 15px -1px rgba(0,0,0,0.20);
+        -webkit-box-shadow: 2px 6px 15px -1px rgba(0,0,0,0.20);
+
+    }
+}
+
+//rgba(255,255,255,.7)

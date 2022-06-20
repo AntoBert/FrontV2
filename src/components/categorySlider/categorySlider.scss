@@ -1,0 +1,62 @@
+@import "../../utilities/variables";
+@import "../../utilities/mixin";
+
+.catSlider-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* margin: 50px auto; */
+    display: flex;
+    gap: 10px;
+    overflow-x: hidden;
+    align-items: center;
+    border-radius: 30px;
+    padding: 2px;
+    border: 2px solid lightgrey;
+    background-color: whitesmoke;
+    box-shadow: 2px 6px 15px -1px rgb(0 0 0 / 20%);
+    -webkit-box-shadow: 2px 6px 15px -1px rgb(0 0 0 / 20%);
+    
+
+    .catSlider-wrapper {
+        display: flex;
+        align-items: center;
+        min-width: 120px;
+        height: 40px;
+        border-radius: 30px;
+        transition: all 1.2s ease;
+        background-color: gainsboro;
+        /* transform: translateX(calc(((-100vw + (2 * $padding-HomeContCat))*($width-catSlider-container/100)) - 100px)); */
+        
+
+        .catSlider-left {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding-left: 10px;
+           
+
+            .catSlider-descr {
+                font-weight: 500;
+                font-size: .9rem;
+            }
+        }
+
+        .catSlider-right {
+            flex: 1;
+            height: 100%;
+            display: flex;
+
+            .catSlider-img {
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+//640 lungh.tot 370 lungh.visibile  120 lungh card. 2click -> spostare -140px (640-370= 270) se voglio arrivare in fondo con 2 click -> 270/2=135 , faccio 140 perchè testando viene più carino

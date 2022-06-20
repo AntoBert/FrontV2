@@ -1,0 +1,12 @@
+.btnMove-container {
+    width: fit-content;
+    height: 80px;
+    align-self: center;
+    position: absolute;
+    bottom: -35px;
+
+    .btnMove-img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

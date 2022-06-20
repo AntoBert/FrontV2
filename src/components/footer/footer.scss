@@ -1,0 +1,75 @@
+@import "../../utilities/mixin";
+@import "../../utilities/variables";
+
+.footer {
+    height: 100%;
+    border-radius: 35px 35px 0 0;
+    box-shadow: 2px 6px 15px -1px rgba(0,0,0,0.20);
+    -webkit-box-shadow: 2px 6px 15px -1px rgba(0,0,0,0.20);
+    background: $color_secondary;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+
+    &-left {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        .footer-logo {
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        &-para {
+            margin: 10px 0 30px 0;
+            font-size: 15px;
+        }
+
+        .footer-left-socialCont {
+            display: flex;
+
+            %footer-social {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 20px;
+            }
+
+            .footer-socialFace {
+                @extend %footer-social;
+                background-color: #3B5999;
+            }
+            .footer-socialInsta {
+                @extend %footer-social;
+                background-color: #E4405F;
+            }
+            .footer-socialTwit {
+                @extend %footer-social;
+                background-color: #55ACEE;
+            }
+        }
+    }
+
+    &-right {
+        padding: 20px;
+
+        &-contact {
+            margin-bottom: 20px;
+            font-weight: 400;
+            font-size: 30px;
+        }
+
+        &-contactItem {
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

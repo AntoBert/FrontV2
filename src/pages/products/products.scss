@@ -1,0 +1,99 @@
+@import "../../utilities/variables";
+@import "../../utilities/mixin";
+
+
+.products-containerNav {
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(15px);
+    z-index: 999;
+    /* margin: 20px 15px 0px 15px; */
+    /* box-shadow: 2px 7px 14px -1px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 2px 7px 14px -1px rgba(0,0,0,0.4); */
+}
+
+.products-opacity {
+    opacity: 0.2;
+    transition: all .2s ease-in-out;
+}
+
+.products {
+    height: 100%;
+    overflow: hidden;
+    background: $color_main;
+    background-color: indianred;
+    
+    
+
+    .products-topContainer {
+        padding: 13vh 0 35px 0;
+        background: $color_secondary;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 2px 6px 15px -1px rgb(0 0 0 / 20%);
+        -webkit-box-shadow: 2px 6px 15px -1px rgb(0 0 0 / 20%);
+
+        .products-catName {
+            margin-left: 20px;
+            font-weight: 500;
+            font-size: 1.8rem;
+        }
+
+    }
+
+
+    .products-cardContainer {
+        padding: 0 10px;
+        margin-top: 60px;
+        border-radius: 35px;
+
+        .products-cat {
+            font-weight: 400;
+            font-size: 1.5rem;
+            margin: 10px;
+            color: white;
+        }
+
+        .products-catSliderCont {
+            display: flex;
+            align-items: center;
+            margin: 15px 0 40px 0;
+            
+
+            .products-arrow {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                background-color: darkgray;
+                color: whitesmoke;
+                opacity: 0.7;
+                z-index: 1;
+            }
+        
+            .products-arrow-left {
+                left: 1px;    
+            } 
+        
+            .products-arrow-right {
+                right: 2px;
+            }
+        }
+
+        .products-cardWrapper {
+            display:grid;
+            grid-template-columns:repeat(auto-fit,(calc((100%/2) - $gapProductCard/2))); 
+            gap: $gapProductCard;
+            padding: 40px 15px;
+            border-radius: 15px;  
+            background: $color_secondary;
+            box-shadow: 2px 6px 15px -1px rgb(0 0 0 / 20%);
+            -webkit-box-shadow: 2px 6px 15px -1px rgb(0 0 0 / 20%);
+        }
+    }
+}
+
+
+

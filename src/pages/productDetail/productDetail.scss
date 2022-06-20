@@ -1,0 +1,145 @@
+@import "../../utilities/variables";
+@import "../../utilities/mixin";
+
+.productDet-containerNav {
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(15px);
+    z-index: 999;
+    
+}
+
+// opacity si riferisce all'elem. padre quindi body ha bg-color=black
+.productDet-opacity {
+    opacity: 0.2;
+    transition: all .2s ease-in-out;
+}
+
+.productDet-arrow {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 5%;
+        top: 10%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: lightsalmon;
+        opacity: 0.6;
+        z-index: 999;
+}
+
+.productDet {
+    min-height: 100vh;  
+    background: $color_main;
+    transition: all .4s ease-in-out;
+    overflow: hidden;
+
+    .product-imgContainer {
+        width: 100%;
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .productDet-img {
+            @include shadow();
+            position: absolute;
+            height: 220px;
+            width: 220px;
+            border: 2px solid white;
+            border-radius: 50%;
+            top: 45%;
+            object-fit: cover;
+
+        } 
+             
+    }
+    
+    .productDet-container {
+        height: 75vh; //da rivedere
+        padding: 18vh 20px 20px 20px;
+        border-radius: 35px 35px 0 0;
+        background: $color_secondary;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .productDet-prodName {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .productDet-qta {
+            display:flex;
+            align-items: center;
+            color: darkgray;
+            margin-bottom: 40px;
+
+            .productDet-amount {
+                font-size: 30px;
+                font-weight: 800;
+                color: black;
+                margin: 0px 20px;
+            }
+        }
+
+        .productDet-cardDescr {
+            min-height: 80px;
+            /* padding: 15px;
+            border-radius: 20px;
+            border: 1px solid grey;
+            background-color: $color_card; */
+
+            & p {
+                font-size: 1.2rem;
+                font-weight: 500;
+                text-align: center;
+            }
+        }
+
+        .productDet-total {
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 30px;
+
+            & p {
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+
+            .productDet-price {
+                display: flex;
+
+                .productDet-lsd {
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .productDet-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            padding: 8px 15px;
+            border-radius: 30px;
+            background-color: $color_btn;
+            color: $color_textBtn;
+            margin-top: 40px;
+            min-width: 90%;
+
+            & p {
+                font-weight: 500;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+
