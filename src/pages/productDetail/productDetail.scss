@@ -21,9 +21,9 @@
         align-items: center;
         justify-content: center;
         left: 5%;
-        top: 10%;
-        width: 50px;
-        height: 50px;
+        top: 13%;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         background-color: lightsalmon;
         opacity: 0.6;
@@ -47,8 +47,8 @@
         .productDet-img {
             @include shadow();
             position: absolute;
-            height: 220px;
-            width: 220px;
+            height: 180px;
+            width: 180px;
             border: 2px solid white;
             border-radius: 50%;
             top: 45%;
@@ -68,7 +68,7 @@
         align-items: center;
 
         .productDet-prodName {
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 600;
             margin-bottom: 20px;
         }
@@ -77,10 +77,10 @@
             display:flex;
             align-items: center;
             color: darkgray;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
 
             .productDet-amount {
-                font-size: 30px;
+                font-size: 25px;
                 font-weight: 800;
                 color: black;
                 margin: 0px 20px;
@@ -88,14 +88,14 @@
         }
 
         .productDet-cardDescr {
-            min-height: 80px;
+            min-height: 60px;
             /* padding: 15px;
             border-radius: 20px;
             border: 1px solid grey;
             background-color: $color_card; */
 
             & p {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 font-weight: 500;
                 text-align: center;
             }
@@ -108,7 +108,7 @@
             margin-top: 30px;
 
             & p {
-                font-size: 1.6rem;
+                font-size: 1.3rem;
                 font-weight: 600;
             }
 
@@ -117,7 +117,7 @@
 
                 .productDet-lsd {
                     font-weight: 600;
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                 }
             }
         }
@@ -126,17 +126,17 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 60px;
+            height: 55px;
             padding: 8px 15px;
             border-radius: 30px;
             background-color: $color_btn;
             color: $color_textBtn;
-            margin-top: 40px;
-            min-width: 90%;
+            margin-top: 30px;
+            min-width: 75%;
 
             & p {
                 font-weight: 500;
-                font-size: 1.4rem;
+                font-size: 1.2rem;
             }
         }
     }

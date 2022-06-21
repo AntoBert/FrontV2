@@ -43,7 +43,7 @@ const ProductDetail = () => {
         </div>
         <div className={`productDet ${isActive? "productDet-opacity": ""}`}>    
             <Link to={`/products/${cat}`}>
-                <div className='productDet-arrow'><ChevronLeftIcon style={{ color: 'white', fontSize: 40 }}/></div>
+                <div className='productDet-arrow'><ChevronLeftIcon style={{ color: 'white', fontSize: 30 }}/></div>
             </Link>
             <div className='product-imgContainer'>
                 <img src={prodDetFilter[0].img} alt='immagine prodotto' className='productDet-img'/>
@@ -51,9 +51,9 @@ const ProductDetail = () => {
             <section className='productDet-container'>
                 <h2 className='productDet-prodName'>{prodDetFilter[0].title}</h2>
                 <div className='productDet-qta'>
-                    <RemoveCircleIcon onClick={()=> handleQuantity("dec")} style={{ fontSize: 40, marginLeft: "5px" }}/>
+                    <RemoveCircleIcon onClick={()=> handleQuantity("dec")} style={{ fontSize: 30, marginLeft: "5px" }}/>
                     <span className='productDet-amount'>{quantity}</span>    
-                    <AddCircleIcon onClick={()=> handleQuantity("inc")} style={{ fontSize: 40, marginRight: "5px" }}/>
+                    <AddCircleIcon onClick={()=> handleQuantity("inc")} style={{ fontSize: 30, marginRight: "5px" }}/>
                 </div>    
                 <div className='productDet-cardDescr'>
                     <p>{prodDetFilter[0].descr}</p>
