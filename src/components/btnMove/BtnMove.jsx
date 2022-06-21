@@ -1,12 +1,13 @@
 import React from 'react';
 import btnArrImage from "../../img/btn-Moveimg.png"; 
 import "./btnMove.scss";
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 const BtnMove = () => {
   return (
     <div className='btnMove-container'>
         <a  className='anchorBtn' href='#bestProd'> 
-          <img className='btnMove-img' src={btnArrImage} alt='moveArrow' />
+          <KeyboardArrowDownIcon style={{fontSize: 45}} />
         </a>
     </div>
   )
