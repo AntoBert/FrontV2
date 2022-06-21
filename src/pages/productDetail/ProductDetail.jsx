@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useState } from 'react';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import RemoveCircleIcon from '@material-ui/icons/RemoveCircle';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
@@ -10,6 +10,10 @@ import './productDetail.scss';
 
 
 const ProductDetail = () => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
     
     const location = useLocation();
     const idProd = location.pathname.split("/")[3]; 

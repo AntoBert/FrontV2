@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom';
 import CategorySlider from '../../components/categorySlider/CategorySlider';
 import Footer from '../../components/footer/Footer';
@@ -11,6 +11,10 @@ import './products.scss';
 
 
 const Products = () => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
     
     const location = useLocation();
     const cat = location.pathname.split("/")[2]; //potrebbe non servire, da rivedere dopo aver passato categorie dal server
