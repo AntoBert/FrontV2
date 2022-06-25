@@ -1,6 +1,9 @@
 //Colors
 $color_main: linear-gradient(90deg, rgba(232,31,31,1) 0%, rgba(237,170,62,1) 100%);
 $color_secondary: linear-gradient(90deg, rgba(255,247,247,1) 0%, rgba(255,250,241,1) 100%);
+/* $color_card: linear-gradient(90deg, rgb(255 210 210) 0%, rgb(255 238 211) 100%); */
+/* $color_card: linear-gradient(0deg, rgb(255 232 232) 0%, rgb(255 242 222) 100%); */
+/* $color_card: linear-gradient(90deg, rgba(255,237,242,1) 0%, rgba(255,239,213,1) 100%); */
 $color_card: #ebeae8;
 $color_btn: crimson;
 $color_btnMove: linear-gradient(90deg, rgba(252,244,244,1) 0%, rgba(255,244,225,1) 100%);
@@ -14,8 +17,9 @@ $color_toggle: darkgrey;
 
 
 //Fonts
-$barlow-fonts: 'Barlow Condensed', sans-serif;
-$bellefair-fonts: 'Bellefair', serif;
+$heading-fonts: 'Noto Serif', serif;
+/* $barlow-fonts: 'Barlow Condensed', sans-serif;
+$bellefair-fonts: 'Bellefair', serif; */
 
 //Layout 
 $padding-HomeContCat: 20px;

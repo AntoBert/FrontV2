@@ -28,7 +28,7 @@ const Navbar = (props) => {
                         <div className='navbar-toogle-btn' />
                     </div>
                     <div className={`menu-icon ${props.isActive? "open": ""}`} onClick={handleNav}>
-                        <span className="menu-icon__line"></span>
+                        <span className={`menu-icon__line ${props.isActive? "cross-color" : ""}`}></span>
                     </div>
                 </div>
             </div>

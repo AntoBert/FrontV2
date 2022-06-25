@@ -56,8 +56,8 @@
         .hero-containerText {
             margin-top: 2vh;
             padding: 20px 0;
-
-
+            text-align: center;
+        
             .bounce-in-right {
                 -webkit-animation: bounce-in-right 1.4s both;
                         animation: bounce-in-right 1.4s both;
@@ -171,13 +171,13 @@
               
 
             .hero-welcomeText {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
                 margin-bottom: 10px;
             }
 
             .hero-restName {
                 margin-bottom: 20px;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 line-height: 30px;
             }
 

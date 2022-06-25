@@ -116,6 +116,7 @@
     min-height: 100vh;
     z-index: 990;
     padding: 150px 20px;
+    color: #c7a272;
     background: $color_secondary;
     transition: all .1s ease-in-out;
 
@@ -136,6 +137,10 @@
 
 .invisible {
     @include invisible();
+}
+
+.cross-color::before, .cross-color::after {
+    background: #c7a272 !important;
 }
 
 
